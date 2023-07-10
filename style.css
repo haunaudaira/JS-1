@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__txt{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    font-style: italic;
+}
+
+.container {  
+    margin-top: 200px;
+    margin-left: 150px;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "prod_1 prod_2 prod_3"
+    "prod_4 prod_5 ."
+    ". . .";
+}
+
+.balanceado-1 { grid-area: prod_1; }
+
+.balanceado-2 { grid-area: prod_2; }
+
+.balanceado-3 { grid-area: prod_3; }
+
+.antiparasitario-4 { grid-area: prod_4; }
+
+.antiparasitario-5 { grid-area: prod_5; }
